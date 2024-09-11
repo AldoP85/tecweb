@@ -86,5 +86,44 @@
 	print_r($z);
 	echo '<br>';
     ?>
+
+    <h2>Ejercicio 4</h2>
+    <?php
+	function test()
+	{
+		
+		echo $GLOBALS["a"];
+		echo '<br>';
+
+		
+		print_r($GLOBALS["z"]);
+		echo '<br>';
+
+		
+		echo $GLOBALS["b"];
+		echo '<br>';
+
+		
+		echo $GLOBALS["c"];
+		echo '<br>';
+
+		$a .= $b;
+		echo $GLOBALS["a"];
+		echo '<br>';
+
+		$b *= $c;
+		echo $GLOBALS["b"];
+		echo '<br>';
+
+		$z[0] = "MySQL";
+		print_r($GLOBALS["z"]);
+		echo '<br>';
+	}
+	$a = "PHP5";
+	$z[] = &$a;
+	$b = "5a version de PHP";
+	$c = $b*10;
+	test();
+    ?>
 </body>
 </html>
