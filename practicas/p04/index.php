@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Práctica 3</title>
+    <title>Práctica 4</title>
 </head>
 <body>
     <h2>Ejercicio 1</h2>
@@ -55,6 +55,36 @@
 	echo '<br>';
     ?>
     <p>Al ocupar &$a relacionamos el valor de la variable con la variable a</p>
+	
+    <h2>Ejercicio 3</h2>
+    <?php
+	$a = "PHP5";
+	echo $a;
+	echo '<br>';
 
+	$z[] = &$a;
+	print_r($z);
+	echo '<br>';
+
+	$b = "5a version de PHP";
+	echo $b;
+	echo '<br>';
+
+	$c = $b*10;
+	echo $c;
+	echo '<br>';
+
+	$a .= $b;
+	echo $a;
+	echo '<br>';
+
+	$b *= $c;
+	echo $b;
+	echo '<br>';
+
+	$z[0] = "MySQL";
+	print_r($z);
+	echo '<br>';
+    ?>
 </body>
 </html>
