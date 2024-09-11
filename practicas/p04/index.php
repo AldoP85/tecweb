@@ -125,5 +125,22 @@
 	$c = $b*10;
 	test();
     ?>
+
+    <h2>Ejercicio 5</h2>
+    <?php
+	$a = "7 personas";
+	$b = (integer) $a;
+	$a = "9E3";
+	$c = (double) $a;
+
+	echo $a;
+	echo '<br>';
+
+	echo $b;
+	echo '<br>';
+
+	echo $c;
+	echo '<br>';
+    ?>
 </body>
 </html>
