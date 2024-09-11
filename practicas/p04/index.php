@@ -30,5 +30,31 @@
         echo '<li>$house*5 es inválida porque el símbolo * no está permitido.</li>';
         echo '</ul>';
     ?>
+
+    <h2>Ejercicio 2</h2>
+    <?php
+	//Inciso 2
+	$a = "ManejandoSQL";
+	$b = 'MySQL';
+	$c = &$a;
+	echo $a;
+	echo '<br>';
+	echo $b;
+	echo '<br>';
+	echo $c;
+	echo '<br>';
+
+	echo '<br>';
+	$a = "PHP server";
+	$b = &$a;
+	echo $a;
+	echo '<br>';
+	echo $b;
+	echo '<br>';
+	echo $c;
+	echo '<br>';
+    ?>
+    <p>Al ocupar &$a relacionamos el valor de la variable con la variable a</p>
+
 </body>
 </html>
