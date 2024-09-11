@@ -171,5 +171,12 @@
 	echo '<br>';
 
     ?>
+
+    <h2>Ejercicio 7</h2>
+    <?php
+	echo "Version de Apache y PHP".$_SERVER['SERVER_SOFTWARE']."<br>";
+	echo "Sistema operativo del servidor: ".php_uname()."<br>";
+	echo "Idioma: ".$_SERVER['HTTP_ACCEPT_LANGUAGE']."<br>";
+    ?>
 </body>
 </html>
