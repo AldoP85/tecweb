@@ -42,5 +42,15 @@
             eje2($e2);
         }
     ?>
+
+    <h2>Ejercicio 3</h2>
+    <p>Multiplo de un número</p>
+    <?php
+        if(isset($_GET['numero2']))
+        {
+            $multi = $_GET['numero2'];
+            eje3($multi);
+        }
+    ?>
 </body>
 </html>

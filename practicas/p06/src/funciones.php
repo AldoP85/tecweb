@@ -7,7 +7,7 @@
             else
             {
                 echo '<h3>R= El número '.$num.' NO es múltiplo de 5 y 7.</h3>';
-            }
+            }//10
    }
 
    function eje2($e2){
@@ -34,17 +34,33 @@
 	}
    }
 
-   function eje3($e2){
-	if($e2)
+   function eje3($multi){
+   $e3 = true;
+   $num;
+	while($e3)
 	{
-	    $itera = 0;
-	    $mat[]=array(1,3);
-	    while(e2)
+	    $num = rand(1,1000);
+	    if($num%$multi==0)
 	    {
-		
-		
-		$itera = $itera+1;
+		$e3 = false;
 	    }
 	}
+   echo "Resultado con while";
+   echo '<br>';
+   echo $num, " es multiplo de $multi.";
+   echo '<br>';
+   $e3 = true;
+	do
+	{
+	    $num = rand(1,1000);
+	    if($num%$multi==0)
+	    {
+		$e3 = false;
+	    }
+	}while($e3);
+   echo "Resultado con do-while";
+   echo '<br>';
+   echo $num, " es multiplo de $multi.";
+   echo '<br>';
    }
 ?>
