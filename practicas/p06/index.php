@@ -32,5 +32,15 @@
             echo $_POST["email"];
         }
     ?>
+
+    <h2>Ejercicio 2</h2>
+    <p>Secuencia compuesta por impar par e impar</p>
+    <?php
+        if(isset($_GET['ejecutar2']))
+        {
+            $e2 = $_GET['ejecutar2'];
+            eje2($e2);
+        }
+    ?>
 </body>
 </html>
