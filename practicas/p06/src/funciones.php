@@ -1,4 +1,5 @@
 <?php
+  error_reporting(0);
   function eje1($num){
             if ($num%5==0 && $num%7==0)
             {
@@ -62,5 +63,27 @@
    echo '<br>';
    echo $num, " es multiplo de $multi.";
    echo '<br>';
+   }
+
+   function eje4($e4){
+	if($e4)
+	{
+	    $abc[]=array(123);
+	    for($i = 97; $i<123; $i++)
+	    {
+		$abc[$i] = chr($i);
+	    }
+	    echo '<table border=1 color"black">';
+	    foreach($abc as $key => $value)
+	    {
+		
+		echo '<tr>';
+		echo '<td>'. $key. '</td>';
+		echo '<td>'. $value. '</td>';
+		echo '</tr>';
+		
+	    }
+	    echo '</table>';
+	}
    }
 ?>

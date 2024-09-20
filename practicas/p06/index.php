@@ -52,5 +52,15 @@
             eje3($multi);
         }
     ?>
+
+    <h2>Ejercicio 4</h2>
+    <p>Arreglo del abecedario</p>
+    <?php
+        if(isset($_GET['ejecutar4']))
+        {
+            $e4 = $_GET['ejecutar4'];
+            eje4($e4);
+        }
+    ?>
 </body>
 </html>
